@@ -1,0 +1,48 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/fis-horizon/user-security/v1/groups",
+    "headers": {
+      "organization-id": {
+        "equalTo": "abcdabcd-1234-1234-1234-1234567890ab"
+      },
+      "uuid": {
+        "matches": ".*"
+      },
+      "Authorization": {
+        "equalTo": "Bearer 12345678-1234-1234-1234-1234567890ab"
+      },
+      "horizon-authorization": {
+        "equalTo": "Bearer: TestLongLongLongLongLongLongLongLongLongLongLongLongLongLongJwt"
+      },
+      "accept": {
+        "matches": "application/json.*"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "groupsList": [
+        {
+          "groupCode": "101GRP",
+          "groupName": "Group 101",
+          "bankNumber": 101
+        },
+        {
+          "groupCode": "102GRP",
+          "groupName": "Group 102",
+          "bankNumber": 101
+        },
+        {
+          "groupCode": "103GRP",
+          "groupName": "Group 103",
+          "bankNumber": 101
+        }
+      ]
+    }
+  }
+}

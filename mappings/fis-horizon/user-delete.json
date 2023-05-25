@@ -1,0 +1,34 @@
+{
+  "request": {
+    "method": "DELETE",
+    "urlPattern": "/fis-horizon/user-security/v1/users/.*",
+    "headers": {
+      "organization-id": {
+        "equalTo": "abcdabcd-1234-1234-1234-1234567890ab"
+      },
+      "uuid": {
+        "matches": ".*"
+      },
+      "Authorization": {
+        "equalTo": "Bearer 12345678-1234-1234-1234-1234567890ab"
+      },
+      "horizon-authorization": {
+        "equalTo": "Bearer: TestLongLongLongLongLongLongLongLongLongLongLongLongLongLongJwt"
+      },
+      "accept": {
+        "matches": "application/json.*"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+          "messageId": "123456",
+          "messageType": "User-Deleted",
+          "messageText": "User 2001 Was Deleted."
+    }
+  }
+}
