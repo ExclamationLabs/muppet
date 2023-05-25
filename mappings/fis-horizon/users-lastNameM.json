@@ -1,0 +1,76 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/fis-horizon/user-security/v1/users?lastName=M*",
+    "headers": {
+      "organization-id": {
+        "equalTo": "abcdabcd-1234-1234-1234-1234567890ab"
+      },
+      "uuid": {
+        "matches": ".*"
+      },
+      "Authorization": {
+        "equalTo": "Bearer 12345678-1234-1234-1234-1234567890ab"
+      },
+      "horizon-authorization": {
+        "equalTo": "Bearer: TestLongLongLongLongLongLongLongLongLongLongLongLongLongLongJwt"
+      },
+      "accept": {
+        "matches": "application/json.*"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "usersList": [
+        {
+          "name": "Billy B Martin",
+          "userId": "T101BBM",
+          "primaryGroupCode": "101FULL",
+          "bankControl": "B",
+          "bankNumber": 101,
+          "branchNumber": 1,
+          "department": "Test Department",
+          "employeeNumber": "1002",
+          "emailAddress": "Billy.B.Martin@test.com",
+          "firstName": "Billy",
+          "middleInitial": "B",
+          "lastName": "Martin"
+        },
+        {
+          "name": "Johnny Mize",
+          "userId": "T101J1M",
+          "primaryGroupCode": "101FULL",
+          "bankControl": "B",
+          "bankNumber": 101,
+          "branchNumber": 1,
+          "department": "Test Department",
+          "employeeNumber": "1003",
+          "emailAddress": "Johnny.Mize@test.com",
+          "firstName": "Johnny",
+          "middleInitial": "",
+          "lastName": "Mize"
+        },
+        {
+          "name": "Fred J McGriff",
+          "userId": "T101FJM",
+          "primaryGroupCode": "101FULL",
+          "bankControl": "B",
+          "bankNumber": 101,
+          "branchNumber": 1,
+          "department": "Test Department",
+          "employeeNumber": "1004",
+          "emailAddress": "Fred.J.McGriff@test.com",
+          "firstName": "Fred",
+          "middleInitial": "J",
+          "lastName": "McGriff"
+        }
+
+      ]
+    }
+  }
+}

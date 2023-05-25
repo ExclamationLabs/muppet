@@ -1,0 +1,40 @@
+{
+  "generalInformation": {
+    "userId": "T101NEW",
+    "userName": "Edgar A Murphy",
+    "employeeNumber": "e1234911",
+    "firstName": "Edgar",
+    "middleInitial": "A",
+    "lastName": "Murphy",
+    "activeDirectoryUser": "",
+    "alternateProgram": "",
+    "printerOutputQueue": "",
+    "userType": "C"
+  },
+  "accessControls": {
+    "primaryGroupCode": "101GRP",
+    "bankControl": "B",
+    "promptForBank": "N",
+    "securityAdministrator": "N"
+  },
+  "defaultBankNumber": "101",
+  "defaultBranchNumber": "0001",
+  "bankAssignment": [
+    {
+      "bankNumber": "101",
+      "branches": [
+        "0001"
+      ]
+    }
+  ],
+  "contactInformation": {
+    "emailAddress": "emurphy@somewhere.com",
+    "areaCode": 123,
+    "phoneNumber": 4446003,
+    "extension": 0,
+    "supervisor": "",
+    "department": "Test Department",
+    "countryCode": ""
+  },
+  "secondarySecurityGroups": []
+}

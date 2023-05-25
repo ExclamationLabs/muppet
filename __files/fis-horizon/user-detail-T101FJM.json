@@ -1,0 +1,40 @@
+{
+  "generalInformation": {
+    "userId": "T101FJM",
+    "userName": "Fred J McGriff",
+    "employeeNumber": "1004",
+    "firstName": "Fred",
+    "middleInitial": "J",
+    "lastName": "McGriff",
+    "activeDirectoryUser": "",
+    "alternateProgram": "",
+    "printerOutputQueue": "",
+    "userType": ""
+  },
+  "accessControls": {
+    "primaryGroupCode": "101GRP",
+    "bankControl": "B",
+    "promptForBank": "N",
+    "securityAdministrator": "N"
+  },
+  "defaultBankNumber": "101",
+  "defaultBranchNumber": "0001",
+  "bankAssignment": [
+    {
+      "bankNumber": "101",
+      "branches": [
+        "0001"
+      ]
+    }
+  ],
+  "contactInformation": {
+    "emailAddress": "Fred.J.McGriff@test.com",
+    "areaCode": 123,
+    "phoneNumber": 4445004,
+    "extension": 0,
+    "supervisor": "",
+    "department": "Test Department",
+    "countryCode": ""
+  },
+  "secondarySecurityGroups": []
+}

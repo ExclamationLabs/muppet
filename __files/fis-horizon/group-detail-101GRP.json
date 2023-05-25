@@ -1,0 +1,58 @@
+{
+  "general": {
+    "groupCode": "101GRP",
+    "groupName": "Group 101",
+    "bankNumber": 101,
+    "quickLaunchGroup": "Not Assigned",
+    "limitedInitialMenu": "Y"
+  },
+  "accessConstraints": {
+    "dayOfWeekAccess": {
+      "monday": "Y",
+      "tuesday": "Y",
+      "wednesday": "Y",
+      "thursday": "Y",
+      "friday": "Y",
+      "saturday": "Y",
+      "sunday": "Y"
+    },
+    "startTime": "2023-0",
+    "endTime": "2023-0"
+  },
+  "generalLedger": {
+    "allowBackdating": "Y",
+    "maxBackdatingDates": 3
+  },
+  "decisionLimits": {
+    "demandDepositSavingsLimit": 211.05,
+    "loanLimit": 0,
+    "onlineTransactionEntryLimits": {
+      "demandDepositLimit": "99.01",
+      "savingsLimit": "99.01",
+      "loanLimit": "99.01",
+      "groupAuthority": "A"
+    },
+    "returnItemProcessingLimits": {
+      "demandDepositLimit": "99.01",
+      "savingsLimit": "99.01",
+      "loanLimit": "99.01",
+      "groupAuthority": "A"
+    },
+    "unpostedItemRepairLimits": {
+      "demandDepositLimit": "99.01",
+      "savingsLimit": "99.01",
+      "loanLimit": "99.01",
+      "groupAuthority": "A"
+    }
+  },
+  "permissionsLevels": [
+    {
+      "application": "LN",
+      "fieldPermissionLevel": 10,
+      "confidentialLevel": 10,
+      "dormantAccess": "F",
+      "confidentialAccess": "Y",
+      "overrideRequiredRequestedFields": "Y"
+    }
+  ]
+}

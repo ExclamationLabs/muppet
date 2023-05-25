@@ -1,0 +1,43 @@
+{
+  "request": {
+    "method": "PUT",
+    "url": "/fis-horizon/authorization",
+    "headers": {
+      "organization-id": {
+        "equalTo": "abcdabcd-1234-1234-1234-1234567890ab"
+      },
+      "uuid": {
+        "matches": ".*"
+      },
+      "Authorization": {
+        "equalTo": "Bearer 12345678-1234-1234-1234-1234567890ab"
+      },
+      "accept": {
+        "matches": "application/json.*"
+      },
+      "content-type": {
+        "matches": "application/json.*"
+      }
+    },
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "userId": "TEST1234",
+          "userSecret": "testSecret1234"
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "wasAuthenticated": true,
+      "jwt": "TestLongLongLongLongLongLongLongLongLongLongLongLongLongLongJwt",
+      "defaultBank": 101,
+      "defaultBranch": 1
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

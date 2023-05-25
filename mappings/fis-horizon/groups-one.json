@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/fis-horizon/user-security/v1/groups/(101GRP|102GRP|103GRP)",
+    "headers": {
+      "organization-id": {
+        "equalTo": "abcdabcd-1234-1234-1234-1234567890ab"
+      },
+      "uuid": {
+        "matches": ".*"
+      },
+      "Authorization": {
+        "equalTo": "Bearer 12345678-1234-1234-1234-1234567890ab"
+      },
+      "horizon-authorization": {
+        "equalTo": "Bearer: TestLongLongLongLongLongLongLongLongLongLongLongLongLongLongJwt"
+      },
+      "accept": {
+        "matches": "application/json.*"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "fis-horizon/group-detail-{{request.pathSegments.[4]}}.json"
+  }
+}

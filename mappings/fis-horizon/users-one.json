@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/fis-horizon/user-security/v1/users/(T101J1A|T101BBM|T101J1M|T101FJM|T101NEW)",
+    "headers": {
+      "organization-id": {
+        "equalTo": "abcdabcd-1234-1234-1234-1234567890ab"
+      },
+      "uuid": {
+        "matches": ".*"
+      },
+      "Authorization": {
+        "equalTo": "Bearer 12345678-1234-1234-1234-1234567890ab"
+      },
+      "horizon-authorization": {
+        "equalTo": "Bearer: TestLongLongLongLongLongLongLongLongLongLongLongLongLongLongJwt"
+      },
+      "accept": {
+        "matches": "application/json.*"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "fis-horizon/user-detail-{{request.pathSegments.[4]}}.json"
+  }
+}
