@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/salesforce/services/data/v39.0/sobjects/Profile/(00e8c00000xyzXBA01|00e8c00000xyzXBA02|00e8c00000xyzXBA11)",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer 00MOCK-SF_AAAAA_B1234567890.4444"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "salesforce/profile-detail-{{request.pathSegments.[6]}}.json"
+  }
+}
