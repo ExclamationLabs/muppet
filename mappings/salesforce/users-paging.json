@@ -1,0 +1,56 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/salesforce/services/data/v39.0/query/?q=SELECT+Id,+Name,+ProfileId,+Username+FROM+User+LIMIT+3",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer 00MOCK-SF_AAAAA_B1234567890.4444"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "totalSize": 5,
+      "done": true,
+      "records": [
+        {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v39.0/sobjects/User/0055500000DiaABCD1"
+          },
+          "Id": "0055500000DiaABCD1",
+          "Name": "Darren Daulton",
+          "ProfileId": "00e8c00000xyzXBA01",
+          "Username": "ddaulton@test.com"
+        },
+        {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v39.0/sobjects/User/0055500000DiaABCD2"
+          },
+          "Id": "0055500000DiaABCD2",
+          "Name": "Cleon Jones",
+          "ProfileId": "00e8c00000xyzXBA01",
+          "Username": "cjones@test.com"
+        },
+        {
+          "attributes": {
+            "type": "User",
+            "url": "/services/data/v39.0/sobjects/User/0055500000DiaABCD3"
+          },
+          "Id": "0055500000DiaABCD3",
+          "Name": "Rafael Furcal",
+          "ProfileId": "00e8c00000xyzXBA01",
+          "Username": "rfurcal@test.com"
+        }
+      ]
+    }
+  }
+}

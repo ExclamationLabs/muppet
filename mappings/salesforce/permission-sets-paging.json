@@ -1,0 +1,50 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/salesforce/services/data/v39.0/query/?q=SELECT+Id,+Name+FROM+PermissionSet+LIMIT+3",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer 00MOCK-SF_AAAAA_B1234567890.4444"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "totalSize": 4,
+      "done": true,
+      "records": [
+        {
+          "attributes": {
+            "type": "PermissionSet",
+            "url": "/services/data/v39.0/sobjects/PermissionSet/0PS8c000000klABCD1"
+          },
+          "Id": "0PS8c000000klABCD1",
+          "Name": "Mock_Api_Authorization_1"
+        },
+        {
+          "attributes": {
+            "type": "PermissionSet",
+            "url": "/services/data/v39.0/sobjects/PermissionSet/0PS8c000000klABCD2"
+          },
+          "Id": "0PS8c000000klABCD2",
+          "Name": "Mock_Api_Authorization_2"
+        },
+        {
+          "attributes": {
+            "type": "PermissionSet",
+            "url": "/services/data/v39.0/sobjects/PermissionSet/0PS8c000000klABCD3"
+          },
+          "Id": "0PS8c000000klABCD3",
+          "Name": "Mock_Api_Authorization_3"
+        }
+      ]
+    }
+  }
+}
