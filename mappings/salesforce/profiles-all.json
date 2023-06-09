@@ -1,0 +1,50 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/salesforce/services/data/v39.0/query/?q=SELECT+Id,+Name+FROM+Profile",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer 00MOCK-SF_AAAAA_B1234567890.4444"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "totalSize": 3,
+      "done": true,
+      "records": [
+        {
+          "attributes": {
+            "type": "Profile",
+            "url": "/services/data/v39.0/sobjects/Profile/00e8c00000xyzXBA01"
+          },
+          "Id": "00e8c000001eAFAFG1",
+          "Name": "System Administrator"
+        },
+        {
+          "attributes": {
+            "type": "Profile",
+            "url": "/services/data/v39.0/sobjects/Profile/00e8c00000xyzXBA02"
+          },
+          "Id": "00e8c000001eAFAFG2",
+          "Name": "System Administrator"
+        },
+        {
+          "attributes": {
+            "type": "Profile",
+            "url": "/services/data/v39.0/sobjects/Profile/00e8c00000xyzXBA11"
+          },
+          "Id": "00e8c000001eAFAFG3",
+          "Name": "System Administrator"
+        }
+      ]
+    }
+  }
+}
