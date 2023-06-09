@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "GET",
-    "url": "/salesforce/services/data/v39.0/query/?q=SELECT+Id,+Name,+ProfileId,+Username+FROM+User+LIMIT+20",
+    "url": "/salesforce/services/data/v39.0/query/?q=SELECT+Id,+Name,+ProfileId,+UserRoleId,+Username+FROM+User+LIMIT+20",
     "headers": {
       "Authorization": {
         "equalTo": "Bearer 00MOCK-SF_AAAAA_B1234567890.4444"
