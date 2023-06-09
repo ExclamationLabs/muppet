@@ -1,0 +1,34 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/salesforce/services/data/v39.0/query/\\?q=SELECT\\+Id,IsFrozen(.*)",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer 00MOCK-SF_AAAAA_B1234567890.4444"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "totalSize": 1,
+      "done": true,
+      "records": [
+        {
+          "attributes": {
+            "type": "UserLogin",
+            "url": "/services/data/v39.0/sobjects/UserLogin/0Yw8c000008bX12345"
+          },
+          "Id": "0Yw8c000008bX12345",
+          "IsFrozen": false
+        }
+      ]
+    }
+  }
+}

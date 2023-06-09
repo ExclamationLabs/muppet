@@ -1,0 +1,34 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/salesforce/services/data/v39.0/query/?q=SELECT+Id,+Name+FROM+Organization",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer 00MOCK-SF_AAAAA_B1234567890.4444"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "totalSize": 1,
+      "done": true,
+      "records": [
+        {
+          "attributes": {
+            "type": "Organization",
+            "url": "/services/data/v39.0/sobjects/Organization/00D8c0000016KT1EAM"
+          },
+          "Id": "00D8c0000016KT1EAM",
+          "Name": "Exclamation Labs"
+        }
+      ]
+    }
+  }
+}
