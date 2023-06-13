@@ -1,0 +1,446 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/bamboohr/api/muppet/v1/reports/custom?format=JSON&onlyCurrent=false",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Basic YWNkZmFjZGZhY2RmYWNkZjEyMzQ1Njc4OTA6eA=="
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    },
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "fields": [
+            "originalHireDate",
+            "lastName",
+            "isPhotoUploaded",
+            "workEmail",
+            "displayName",
+            "jobTitle",
+            "supervisorEmail",
+            "customShirtSize",
+            "supervisorEId",
+            "eeo",
+            "employeeNumber",
+            "division",
+            "terminationDate",
+            "workPhonePlusExtension",
+            "nickname",
+            "id",
+            "preferredName",
+            "department",
+            "acaStatus",
+            "createdByUserId",
+            "hireDate",
+            "acaStatusCategory",
+            "fullName1",
+            "lastChanged",
+            "fullName5",
+            "fullName4",
+            "fullName3",
+            "fullName2",
+            "linkedIn",
+            "supervisorId",
+            "customOfficerTitle",
+            "employeeStatusDate",
+            "firstName",
+            "homeEmail",
+            "mobilePhone",
+            "standardHoursPerWeek",
+            "timeTrackingEnabled",
+            "employmentHistoryStatus",
+            "location",
+            "middleName",
+            "workPhone",
+            "exempt",
+            "includeInPayroll",
+            "workPhoneExtension",
+            "supervisor",
+            "bestEmail",
+            "status"
+          ]
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "title": "Report",
+      "fields": [
+        {
+          "id": "lastName",
+          "type": "text",
+          "name": "Last Name"
+        },
+        {
+          "id": "isPhotoUploaded",
+          "type": "bool",
+          "name": "Is employee photo uploaded"
+        },
+        {
+          "id": "workEmail",
+          "type": "email",
+          "name": "Work Email"
+        },
+        {
+          "id": "displayName",
+          "type": "text",
+          "name": "Display Name"
+        },
+        {
+          "id": "jobTitle",
+          "type": "list",
+          "name": "Job Title"
+        },
+        {
+          "id": "supervisorEmail",
+          "type": "email",
+          "name": "Manager's email"
+        },
+        {
+          "id": "supervisorEId",
+          "type": "text",
+          "name": "Supervisor EID"
+        },
+        {
+          "id": "employeeNumber",
+          "type": "employee_number",
+          "name": "Employee #"
+        },
+        {
+          "id": "division",
+          "type": "list",
+          "name": "Division"
+        },
+        {
+          "id": "terminationDate",
+          "type": "date",
+          "name": "Termination Date"
+        },
+        {
+          "id": "workPhonePlusExtension",
+          "type": "text",
+          "name": "Work phone + ext."
+        },
+        {
+          "id": "preferredName",
+          "type": "text",
+          "name": "Nickname"
+        },
+        {
+          "id": "id",
+          "type": "int",
+          "name": "EEID"
+        },
+        {
+          "id": "preferredName",
+          "type": "text",
+          "name": "Preferred Name"
+        },
+        {
+          "id": "department",
+          "type": "list",
+          "name": "Department"
+        },
+        {
+          "id": "acaStatus",
+          "type": "aca_status",
+          "name": "Employment Status: ACA Full-Time"
+        },
+        {
+          "id": "createdByUserId",
+          "type": "int",
+          "name": "Created By User Id"
+        },
+        {
+          "id": "hireDate",
+          "type": "date",
+          "name": "Hire Date"
+        },
+        {
+          "id": "acaStatusCategory",
+          "type": "aca_status",
+          "name": "ACA Status"
+        },
+        {
+          "id": "fullName1",
+          "type": "text",
+          "name": "First Name Last Name"
+        },
+        {
+          "id": "lastChanged",
+          "type": "timestamp",
+          "name": "Last changed"
+        },
+        {
+          "id": "fullName5",
+          "type": "text",
+          "name": "Name"
+        },
+        {
+          "id": "fullName4",
+          "type": "text",
+          "name": "Name"
+        },
+        {
+          "id": "fullName3",
+          "type": "text",
+          "name": "Name"
+        },
+        {
+          "id": "fullName2",
+          "type": "text",
+          "name": "Last Name, First Name"
+        },
+        {
+          "id": "supervisorId",
+          "type": "text",
+          "name": "Supervisor ID"
+        },
+        {
+          "id": "customOfficerTitle",
+          "type": "text",
+          "name": "Officer Title"
+        },
+        {
+          "id": "employeeStatusDate",
+          "type": "date",
+          "name": "Employment Status: Date"
+        },
+        {
+          "id": "firstName",
+          "type": "text",
+          "name": "First Name"
+        },
+        {
+          "id": "homeEmail",
+          "type": "email",
+          "name": "Home Email"
+        },
+        {
+          "id": "mobilePhone",
+          "type": "text",
+          "name": "Mobile Phone"
+        },
+        {
+          "id": "employmentHistoryStatus",
+          "type": "list",
+          "name": "Employment Status"
+        },
+        {
+          "id": "location",
+          "type": "list",
+          "name": "Location"
+        },
+        {
+          "id": "middleName",
+          "type": "text",
+          "name": "Middle Name"
+        },
+        {
+          "id": "workPhone",
+          "type": "text",
+          "name": "Work Phone"
+        },
+        {
+          "id": "exempt",
+          "type": "exempt",
+          "name": "Overtime Status"
+        },
+        {
+          "id": "workPhoneExtension",
+          "type": "text",
+          "name": "Work Ext."
+        },
+        {
+          "id": "supervisor",
+          "type": "text",
+          "name": "Supervisor name"
+        },
+        {
+          "id": "bestEmail",
+          "type": "email",
+          "name": "Email"
+        },
+        {
+          "id": "status",
+          "type": "status",
+          "name": "Status"
+        }
+      ],
+      "employees": [
+        {
+          "id": "1",
+          "lastName": "Jackson",
+          "isPhotoUploaded": "true",
+          "workEmail": "rjackson@test.com",
+          "displayName": "Reggie Jackson",
+          "jobTitle": "HR Manager",
+          "supervisorEmail": "bruth@test.com",
+          "supervisorEId": "11",
+          "employeeNumber": "005151",
+          "division": "Human Resources",
+          "terminationDate": "2021-01-14",
+          "workPhonePlusExtension": "111-222-3333 ext 444",
+          "preferredName": null,
+          "department": "Human Resources Officers",
+          "acaStatus": null,
+          "createdByUserId": null,
+          "hireDate": "2017-10-02",
+          "acaStatusCategory": null,
+          "fullName1": "Reggie Jackson",
+          "lastChanged": "2022-08-18T20:06:13+00:00",
+          "fullName5": "Reggie Jackson",
+          "fullName4": "Jackson, Reggie",
+          "fullName3": "Jackson, Reggie",
+          "fullName2": "Jackson, Reggie",
+          "supervisorId": "009955",
+          "customOfficerTitle": "Vice President",
+          "employeeStatusDate": "2021-01-14",
+          "firstName": "Reggie",
+          "homeEmail": "rjacksonhome@test.com",
+          "mobilePhone": "402-333-4444",
+          "employmentHistoryStatus": "Terminated",
+          "location": "Somewhere USA",
+          "middleName": "",
+          "workPhone": "555-666-7777",
+          "exempt": "Exempt",
+          "workPhoneExtension": "567",
+          "supervisor": "Ruth, Babe",
+          "bestEmail": "rjackson@test.com",
+          "status": "Inactive"
+        },
+        {
+          "id": "2",
+          "lastName": "Carew",
+          "isPhotoUploaded": "true",
+          "workEmail": "rcarew@test.com",
+          "displayName": "Rod Carew",
+          "jobTitle": "HR Staffer",
+          "supervisorEmail": "bruth@test.com",
+          "supervisorEId": "11",
+          "employeeNumber": "005152",
+          "division": "Human Resources",
+          "terminationDate": "",
+          "workPhonePlusExtension": "111-222-3311 ext 456",
+          "preferredName": null,
+          "department": "Human Resources Officers",
+          "acaStatus": null,
+          "createdByUserId": null,
+          "hireDate": "2014-10-11",
+          "acaStatusCategory": null,
+          "fullName1": "Rod Carew",
+          "lastChanged": "2022-08-18T20:06:13+00:00",
+          "fullName5": "Rod Carew",
+          "fullName4": "Carew, Rod",
+          "fullName3": "Carew, Rod",
+          "fullName2": "Carew, Rod",
+          "supervisorId": "009955",
+          "customOfficerTitle": "Associate Vice President",
+          "employeeStatusDate": "2019-01-14",
+          "firstName": "Rod",
+          "homeEmail": "rcarewhome@test.com",
+          "mobilePhone": "402-333-4455",
+          "employmentHistoryStatus": "Active",
+          "location": "Somewhere USA",
+          "middleName": "",
+          "workPhone": "555-666-7788",
+          "exempt": "Exempt",
+          "workPhoneExtension": "123",
+          "supervisor": "Ruth, Babe",
+          "bestEmail": "rcarewhome@test.com",
+          "status": "Active"
+        },
+        {
+          "id": "3",
+          "lastName": "Cobb",
+          "isPhotoUploaded": "true",
+          "workEmail": "tcobb@test.com",
+          "displayName": "Ty Cobb",
+          "jobTitle": "HR Staffer",
+          "supervisorEmail": "tcobb@test.com",
+          "supervisorEId": "11",
+          "employeeNumber": "005153",
+          "division": "Human Resources",
+          "terminationDate": "",
+          "workPhonePlusExtension": "111-222-3323 ext 147",
+          "preferredName": null,
+          "department": "Human Resources Officers",
+          "acaStatus": null,
+          "createdByUserId": null,
+          "hireDate": "2014-10-11",
+          "acaStatusCategory": null,
+          "fullName1": "Ty Cobb",
+          "lastChanged": "2022-08-18T20:06:13+00:00",
+          "fullName5": "Ty Cobb",
+          "fullName4": "Cobb, Ty",
+          "fullName3": "Cobb, Ty",
+          "fullName2": "Cobb, Ty",
+          "supervisorId": "009955",
+          "customOfficerTitle": "Business Associate",
+          "employeeStatusDate": "2019-01-14",
+          "firstName": "Ty",
+          "homeEmail": "tcobbhome@test.com",
+          "mobilePhone": "402-333-4147",
+          "employmentHistoryStatus": "Active",
+          "location": "Somewhere USA",
+          "middleName": "",
+          "workPhone": "555-666-1288",
+          "exempt": "Exempt",
+          "workPhoneExtension": "123",
+          "supervisor": "Ruth, Babe",
+          "bestEmail": "tcobbhome@test.com",
+          "status": "Active"
+        },
+        {
+          "id": "4",
+          "lastName": "Blue",
+          "isPhotoUploaded": "true",
+          "workEmail": "vblue@test.com",
+          "displayName": "Vida Blue",
+          "jobTitle": "HR Staffer",
+          "supervisorEmail": "vblue@test.com",
+          "supervisorEId": "11",
+          "employeeNumber": "005154",
+          "division": "Human Resources",
+          "terminationDate": "",
+          "workPhonePlusExtension": "111-222-1123 ext 107",
+          "preferredName": null,
+          "department": "Human Resources Officers",
+          "acaStatus": null,
+          "createdByUserId": null,
+          "hireDate": "2014-10-11",
+          "acaStatusCategory": null,
+          "fullName1": "Vida Blue",
+          "lastChanged": "2022-08-18T20:06:13+00:00",
+          "fullName5": "Vida Blue",
+          "fullName4": "Blue, Vida",
+          "fullName3": "Blue, Vida",
+          "fullName2": "Blue, Vida",
+          "supervisorId": "009955",
+          "customOfficerTitle": "Business Associate",
+          "employeeStatusDate": "2019-01-14",
+          "firstName": "Vida",
+          "homeEmail": "vbluehome@test.com",
+          "mobilePhone": "402-333-4227",
+          "employmentHistoryStatus": "Active",
+          "location": "Somewhere USA",
+          "middleName": "",
+          "workPhone": "555-661-3388",
+          "exempt": "Exempt",
+          "workPhoneExtension": "123",
+          "supervisor": "Ruth, Babe",
+          "bestEmail": "vbluehome@test.com",
+          "status": "Active"
+        }
+      ]
+    }
+  }
+}

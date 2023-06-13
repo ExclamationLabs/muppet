@@ -1,0 +1,53 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/bamboohr/api/muppet/v1/reports/custom?format=JSON&onlyCurrent=true",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Basic YWNkZmFjZGZhY2RmYWNkZjEyMzQ1Njc4OTA6eA=="
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    },
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "fields": [
+            "id"
+          ]
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "title": "Report",
+      "fields": [
+        {
+          "id": "id",
+          "type": "int",
+          "name": "BAMBOOID"
+        }
+      ],
+      "employees": [
+        {
+          "id": "1"
+        },
+        {
+          "id": "2"
+        },
+        {
+          "id": "3"
+        },
+        {
+          "id": "4"
+        }
+      ]
+    }
+  }
+}
