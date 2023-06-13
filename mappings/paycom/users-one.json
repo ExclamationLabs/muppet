@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/paycom/api/v1/employee/000([0-3])",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Basic NDQ0NDQ0NDQ0NDRhYWFhYWFhYWFhNTU1NTU1NTU1NWJiYmJiYmJiYjY2NjY2NjY2NjZjY2NjY2NjY2NjYzphYWFhYWFhYWFhMTExMTExMTExMTFiYmJiYmJiYmIyMjIyMjIyMjIyMjJjY2NjY2NjY2MzMzMzMzMzMzMzMzMz"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "paycom/user-detail-{{request.pathSegments.[4]}}.json"
+  }
+}
