@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/bamboohr/api/muppet/v1/employees/([1-4])\\?onlyCurrent=false&fields=acaStatus%2CacaStatusCategory%2CbestEmail%2CcreatedByUserId%2CcustomOfficerTitle%2CcustomShirtSize%2Cdepartment%2CdisplayName%2Cdivision%2Ceeo%2CemployeeNumber%2CemploymentHistoryStatus%2CemployeeStatusDate%2Cexempt%2CfirstName%2CfullName1%2CfullName2%2CfullName3%2CfullName4%2CfullName5%2ChireDate%2ChomeEmail%2Cid%2CincludeInPayroll%2CisPhotoUploaded%2CjobTitle%2ClastChanged%2ClastName%2ClinkedIn%2Clocation%2CmiddleName%2CmobilePhone%2Cnickname%2CoriginalHireDate%2CpreferredName%2CstandardHoursPerWeek%2Cstatus%2Csupervisor%2CsupervisorId%2CsupervisorEId%2CsupervisorEmail%2CterminationDate%2CtimeTrackingEnabled%2CworkEmail%2CworkPhone%2CworkPhoneExtension%2CworkPhonePlusExtension",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Basic YWNkZmFjZGZhY2RmYWNkZjEyMzQ1Njc4OTA6eA=="
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "bamboohr/user-detail-{{request.pathSegments.[5]}}.json"
+  }
+}
