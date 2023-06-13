@@ -1,0 +1,60 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/paycom/api/v1/employeeid",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Basic NDQ0NDQ0NDQ0NDRhYWFhYWFhYWFhNTU1NTU1NTU1NWJiYmJiYmJiYjY2NjY2NjY2NjZjY2NjY2NjY2NjYzphYWFhYWFhYWFhMTExMTExMTExMTFiYmJiYmJiYmIyMjIyMjIyMjIyMjJjY2NjY2NjY2MzMzMzMzMzMzMzMzMz"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "result": true,
+      "data": [
+        {
+          "eecode": "0000",
+          "eebadge": "",
+          "clockseq": "",
+          "firstname": "TY",
+          "middlename": "",
+          "lastname": "COBB"
+        },
+        {
+          "eecode": "0001",
+          "eebadge": "",
+          "clockseq": "",
+          "firstname": "ROLLIE",
+          "middlename": "",
+          "lastname": "FINGERS"
+        },
+        {
+          "eecode": "0002",
+          "eebadge": "",
+          "clockseq": "0002",
+          "firstname": "SANDY",
+          "middlename": "",
+          "lastname": "KOUFAX"
+        },
+        {
+          "eecode": "0003",
+          "eebadge": "",
+          "clockseq": "0003",
+          "firstname": "STAN",
+          "middlename": "",
+          "lastname": "MUSIAL"
+        }
+      ],
+      "errors": [],
+      "errorCount": 0,
+      "records": 4
+    }
+  }
+}
