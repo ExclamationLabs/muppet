@@ -1,0 +1,36 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/adp/hr/v2/workers/meta",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer eyJ0eXAiOJumb1234LCJhbGciOiJSUzI1NiIsIng1dCI6ImJumb1234JHanVKX1UtY19CcVZZJumb12343QSIsImtpZCI6ImJYU1RadjJHanVKX1UtY19CcVZZWnBzJumb1234XeyJpc3MiOiJodHRa5555"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "meta": {
+        "queryCriteria": [
+          {
+            "meta1": "m1",
+            "meta2": "m2"
+          },
+          {
+            "meta3": "m3",
+            "meta4": "m4"
+          }
+        ]
+      }
+    }
+  }
+}
+}
+}
