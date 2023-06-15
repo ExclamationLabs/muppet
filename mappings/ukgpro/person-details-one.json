@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/ukgpro/personnel/v1/person-details/MUPPET00010([1-4])",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Basic VUtHUFJPMTIzNE1VUFBFVFVTRVI6TmY7NFBPMzhCTStfWiRFQ2RHNDR7M1hwS1l4SkBOeDU5NXB9aitMNTRRWzMx"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "ukgpro/person-detail-{{request.pathSegments.[4]}}.json"
+  }
+}

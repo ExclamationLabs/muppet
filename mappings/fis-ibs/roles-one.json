@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/fis-ibs/rest/MUPPET/v3/roles/90ee(.*)",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer eyJ0eXAiOJumb1234LCJhbGciOiJSUzI1NiIsIng1dCI6ImJumb1234JHanVKX1UtY19CcVZZJumb12343QSIsImtpZCI6ImJYU1RadjJHanVKX1UtY19CcVZZWnBzJumb1234XeyJpc3MiOiJodFIS123789"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "fis-ibs/role-detail-{{request.pathSegments.[5]}}.json"
+  }
+}

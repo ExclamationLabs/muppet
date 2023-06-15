@@ -1,0 +1,49 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/paylocity/api/v2/companies/F1234/employees(.*)",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer eyJ0eXAiOJumb1234LCJhbGciOiJSUzI1NiIsIng1dCI6ImJumb1234JHanVKX1UtY19CcVZZJumb12343QSIsImtpZCI6ImJYU1RadjJHanVKX1UtY19CcVZZWnBzJumb1234XeyJpc3MiOiJodHRw9999"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody":  [
+      {
+        "employeeId": "501",
+        "statusCode": "L",
+        "statusTypeCode": "L"
+      },
+      {
+        "employeeId": "502",
+        "statusCode": "A",
+        "statusTypeCode": "A"
+      },
+      {
+        "employeeId": "503",
+        "statusCode": "L",
+        "statusTypeCode": "L"
+      },
+      {
+        "employeeId": "504",
+        "statusCode": "L",
+        "statusTypeCode": "L"
+      },
+      {
+        "employeeId": "505",
+        "statusCode": "A",
+        "statusTypeCode": "A"
+      }
+      ]
+    }
+  }
+}
+}

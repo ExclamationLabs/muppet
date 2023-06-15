@@ -1,0 +1,101 @@
+{
+  "birthDate": "1959-04-18T00:00:00",
+  "customBooleanFields": [
+    {
+      "category": "Test1",
+      "label": "Testing 1",
+      "value": false
+    },
+    {
+      "category": "Test2",
+      "label": "Testing 2 ",
+      "value": false
+    },
+    {
+      "category": "Test3",
+      "label": "Testing 3",
+      "value": false
+    }
+  ],
+  "employeeId": "502",
+  "coEmpCode": "F1234-502",
+  "ethnicity": "A",
+  "firstName": "Johnny",
+  "lastName": "Bench",
+  "maritalStatus": "S",
+  "middleName": "",
+  "salutation": "N/A",
+  "currency": "USD",
+  "ownerPercent": 0.000000,
+  "taxSetup": {
+    "suiState": "IL",
+    "taxForm": "W2"
+  },
+  "departmentPosition": {
+    "costCenter1": "501",
+    "costCenter2": "601",
+    "costCenter3": "701",
+    "effectiveDate": "2017-02-18T00:00:00",
+    "employeeType": "FT",
+    "isMinimumWageExempt": false,
+    "isOvertimeExempt": false,
+    "isSupervisorReviewer": true,
+    "isUnionDuesCollected": false,
+    "isUnionInitiationCollected": false,
+    "jobTitle": "Great Worker",
+    "workersCompensation": "505000"
+  },
+  "federalTax": {
+    "amount": 0.000000,
+    "exemptions": 0.000000,
+    "filingStatus": "M",
+    "percentage": 0.000000,
+    "taxCalculationCode": "D",
+    "w4FormYear": 2019
+  },
+  "primaryStateTax": {
+    "amount": 0.000000,
+    "exemptions": 0.000000,
+    "exemptions2": 0.000000,
+    "filingStatus": "MS",
+    "percentage": 0.000000,
+    "taxCalculationCode": "D",
+    "taxCode": "GA",
+    "w4FormYear": 2019
+  },
+  "status": {
+    "changeReason": "Deactived",
+    "effectiveDate": "2021-03-31T00:00:00",
+    "employeeStatus": "L",
+    "beginCheckDate": "2021-03-31T00:00:00",
+    "hireDate": "2018-02-04T00:00:00",
+    "isEligibleForRehire": false,
+    "statusType": "L"
+  },
+  "workAddress": {
+    "address1": "1001 Yancy St",
+    "city": "New York",
+    "country": "USA",
+    "county": "New York",
+    "emailAddress": "jbench@test.com",
+    "phone": "(555) 111-5556",
+    "state": "NY",
+    "postalCode": "61234"
+  },
+  "homeAddress": {
+    "address1": "2001 Shady Lane",
+    "city": "Albany",
+    "country": "USA",
+    "county": "Albany",
+    "emailAddress": "jbench.home@test.com",
+    "state": "NY",
+    "postalCode": "57788"
+  },
+  "webTime": {
+    "isTimeLaborEnabled": true,
+    "badgeNumber": "301",
+    "chargeRate": 0.000000
+  },
+  "companyName": "Acme Company",
+  "companyFEIN": "00-5124489"
+}

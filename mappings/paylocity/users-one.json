@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/paylocity/api/v2/companies/F1234/employees/50([1-5])",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer eyJ0eXAiOJumb1234LCJhbGciOiJSUzI1NiIsIng1dCI6ImJumb1234JHanVKX1UtY19CcVZZJumb12343QSIsImtpZCI6ImJYU1RadjJHanVKX1UtY19CcVZZWnBzJumb1234XeyJpc3MiOiJodHRw9999"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "paylocity/user-detail-{{request.pathSegments.[6]}}.json"
+  }
+}
