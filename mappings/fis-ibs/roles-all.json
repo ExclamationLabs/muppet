@@ -1,0 +1,54 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/fis-ibs/rest/MUPPET/v3/roles/search-details?PrcsGrpId=601",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer eyJ0eXAiOJumb1234LCJhbGciOiJSUzI1NiIsIng1dCI6ImJumb1234JHanVKX1UtY19CcVZZJumb12343QSIsImtpZCI6ImJYU1RadjJHanVKX1UtY19CcVZZWnBzJumb1234XeyJpc3MiOiJodFIS123789"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "Entity": {
+        "RoleList": [
+          {
+            "RoleId": "90ee78f5-3a97-4b44-b625-797dc6c34001",
+            "RoleNme": "Test Role 1",
+            "RoleTyp": "STANDARD",
+            "PrcsGrpId": 601,
+            "LstUpDte": "2023-02-01-13.56.01"
+          },
+          {
+            "RoleId": "90ee78f5-3a97-4b44-b625-797dc6c34002",
+            "RoleNme": "Test Role 2",
+            "RoleTyp": "STANDARD",
+            "PrcsGrpId": 601,
+            "LstUpDte": "2023-06-06-14.03.11"
+          },
+          {
+            "RoleId": "90ee78f5-3a97-4b44-b625-797dc6c34003",
+            "RoleNme": "Test Role 3 - Security",
+            "RoleTyp": "SECURITY",
+            "PrcsGrpId": 601,
+            "LstUpDte": "2020-02-17-11.08.10"
+          }
+        ]
+      },
+      "Metadata": {
+        "MsgLst": [
+          {
+            "Text": "Success",
+            "Type": "Informational Message",
+            "Severity": "Info",
+            "Code": "0"
+          }
+        ]
+      }
+    }
+  }
+}

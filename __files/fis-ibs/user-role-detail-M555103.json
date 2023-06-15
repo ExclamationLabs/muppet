@@ -1,0 +1,36 @@
+{
+  "Entity": {
+    "UsrIdLst": [
+      {
+        "Usr": {
+          "UsrId": "M555103",
+          "RoleLst": [
+            {
+              "Role": {
+                "RoleId": "90ee78f5-3a97-4b44-b625-797dc6c34001",
+                "RoleNme": "Test Role 1",
+                "RoleTyp": "STANDARD",
+                "LstUpDte": "2020-02-18-14.45.23",
+                "LstUpDteBy": "X123001",
+                "PrcsGrpId": 601,
+                "RsmeDte": "2020-02-25-00.02.15"
+              }
+            }
+          ],
+          "ErrCde": "0000",
+          "ErrMsg": "Success"
+        }
+      }
+    ]
+  },
+  "Metadata": {
+    "MsgLst": [
+      {
+        "Text": "Success",
+        "Type": "Informational Message",
+        "Severity": "Info",
+        "Code": "0"
+      }
+    ]
+  }
+}
