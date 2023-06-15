@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/ukgpro/personnel/v1/companies/TEST1/employment-details?employeeId=TESTTESTTEST",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Basic VUtHUFJPMTIzNE1VUFBFVFVTRVI6TmY7NFBPMzhCTStfWiRFQ2RHNDR7M1hwS1l4SkBOeDU5NXB9aitMNTRRWzMx"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+      "Content-Type": "application/json",
+      "Content-Length": "0"
+    },
+    "jsonBody": {
+    }
+  }
+}

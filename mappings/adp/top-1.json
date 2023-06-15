@@ -1,0 +1,513 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/adp/hr/v2/workers?$top=1",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer eyJ0eXAiOJumb1234LCJhbGciOiJSUzI1NiIsIng1dCI6ImJumb1234JHanVKX1UtY19CcVZZJumb12343QSIsImtpZCI6ImJYU1RadjJHanVKX1UtY19CcVZZWnBzJumb1234XeyJpc3MiOiJodHRa5555"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "workers": [
+        {
+          "associateOID": "ABCDEFG12345678",
+          "workerID": {
+            "idValue": "0099"
+          },
+          "person": {
+            "birthDate": "0000-00-00",
+            "genderCode": {
+              "codeValue": "M",
+              "shortName": "Male",
+              "longName": "Male"
+            },
+            "maritalStatusCode": {
+              "effectiveDate": "2020-01-04",
+              "codeValue": "M",
+              "shortName": "Married"
+            },
+            "socialInsurancePrograms": [
+              {
+                "nameCode": {
+                  "codeValue": "Medicare",
+                  "shortName": "Medicare"
+                },
+                "coveredIndicator": false
+              },
+              {
+                "nameCode": {
+                  "codeValue": "Medicaid",
+                  "shortName": "Medicaid"
+                },
+                "coveredIndicator": false
+              }
+            ],
+            "tobaccoUserIndicator": false,
+            "preferredName": {
+              "givenName": "Ty",
+              "familyName1": "Cobb"
+            },
+            "ethnicityCode": {
+              "codeValue": "4",
+              "shortName": "4",
+              "longName": "Not Hispanic or Latino"
+            },
+            "raceCode": {
+              "identificationMethodCode": {
+                "codeValue": "SID",
+                "shortName": "Self ID"
+              },
+              "codeValue": "1",
+              "shortName": "White",
+              "longName": "White"
+            },
+            "highestEducationLevelCode": {
+              "codeValue": "BAC",
+              "shortName": "Bachelors Degree",
+              "longName": "Bachelors Degree"
+            },
+            "militaryClassificationCodes": [],
+            "customFieldGroup": {
+              "codeFields": [
+                {
+                  "itemID": "AAA:555:111",
+                  "nameCode": {
+                    "codeValue": "Language Ability",
+                    "longName": "Language Ability"
+                  }
+                },
+                {
+                  "itemID": "AAA:555:112",
+                  "nameCode": {
+                    "codeValue": "Shirt Size",
+                    "shortName": "Shirt Size"
+                  }
+                }
+              ],
+              "stringFields": [
+                {
+                  "itemID": "AAA:555:113",
+                  "nameCode": {
+                    "codeValue": "License Plate Number",
+                    "longName": "License Plate Number"
+                  },
+                  "stringValue": "AAA-123"
+                },
+                {
+                  "itemID": "AAA:555:114",
+                  "nameCode": {
+                    "codeValue": "Make/Model of Primary Vehicle",
+                    "longName": "Make/Model of Primary Vehicle"
+                  },
+                  "stringValue": "Chevy Cavalier"
+                },
+                {
+                  "itemID": "AAA:555:115",
+                  "nameCode": {
+                    "codeValue": "Verified",
+                    "longName": "Verified"
+                  }
+                }
+              ]
+            },
+            "governmentIDs": [
+              {
+                "itemID": "12345_67",
+                "idValue": "XXX-XX-XXXX",
+                "nameCode": {
+                  "codeValue": "SSN",
+                  "longName": "Social Security Number"
+                },
+                "countryCode": "US"
+              }
+            ],
+            "legalName": {
+              "nickName": "Ty",
+              "givenName": "Ty",
+              "middleName": "J",
+              "familyName1": "Cobb",
+              "formattedName": "Cobb, Ty J"
+            },
+            "legalAddress": {
+              "nameCode": {
+                "codeValue": "Personal Address 1",
+                "shortName": "Personal Address 1",
+                "longName": "Personal Address 1"
+              },
+              "lineOne": "1001 Prairie Road",
+              "cityName": "Somewhere",
+              "countrySubdivisionLevel1": {
+                "subdivisionType": "StateTerritory",
+                "codeValue": "TX",
+                "shortName": "Texas"
+              },
+              "countrySubdivisionLevel2": {
+                "subdivisionType": "County",
+                "codeValue": "Franklin County",
+                "shortName": "Franklin County"
+              },
+              "countryCode": "US",
+              "postalCode": "54321"
+            },
+            "communication": {
+              "mobiles": [
+                {
+                  "itemID": "1234567:55:PC",
+                  "nameCode": {
+                    "codeValue": "Personal Cell",
+                    "shortName": "Personal Cell"
+                  },
+                  "countryDialing": "1",
+                  "areaDialing": "333",
+                  "dialNumber": "4445555",
+                  "access": "1",
+                  "formattedNumber": "(333) 444-5555"
+                }
+              ],
+              "emails": [
+                {
+                  "nameCode": {
+                    "codeValue": "Personal E-mail",
+                    "shortName": "Personal E-mail"
+                  },
+                  "emailUri": "tycobb@test.com",
+                  "notificationIndicator": false
+                }
+              ]
+            }
+          },
+          "workerDates": {
+            "originalHireDate": "2011-03-22"
+          },
+          "workerStatus": {
+            "statusCode": {
+              "codeValue": "Active"
+            }
+          },
+          "businessCommunication": {
+            "emails": [
+              {
+                "itemID": "Business",
+                "nameCode": {
+                  "codeValue": "Work E-mail",
+                  "shortName": "Work E-mail"
+                },
+                "emailUri": "tycobb.work@test.com",
+                "notificationIndicator": true
+              }
+            ]
+          },
+          "workAssignments": [
+            {
+              "itemID": "12314654",
+              "primaryIndicator": true,
+              "hireDate": "2016-06-22",
+              "actualStartDate": "2018-09-24",
+              "assignmentStatus": {
+                "statusCode": {
+                  "codeValue": "A",
+                  "shortName": "Active",
+                  "longName": "Active"
+                },
+                "reasonCode": {
+                  "codeValue": "AB0099",
+                  "shortName": "(N) New Hire"
+                },
+                "effectiveDate": "2021-03-29"
+              },
+              "workerTypeCode": {
+                "codeValue": "FULL",
+                "longName": "Active - Full Time Salary"
+              },
+              "workerGroups": [
+                {
+                  "nameCode": {
+                    "codeValue": "Benefits Eligibility Class",
+                    "longName": "Benefits Eligibility Class"
+                  },
+                  "groupCode": {
+                    "codeValue": "SALPO",
+                    "longName": "Full Time - Salary PTO"
+                  }
+                }
+              ],
+              "jobCode": {
+                "codeValue": "SSE",
+                "longName": "Senior Systems Engineer"
+              },
+              "jobTitle": "Senior Systems Engineer",
+              "occupationalClassifications": [
+                {
+                  "nameCode": {
+                    "codeValue": "EEOC",
+                    "shortName": "EEOC"
+                  },
+                  "classificationCode": {
+                    "codeValue": "3",
+                    "shortName": "Technicians"
+                  }
+                },
+                {
+                  "nameCode": {
+                    "codeValue": "Job Class",
+                    "shortName": "Job Class"
+                  },
+                  "classificationCode": {
+                    "codeValue": "A",
+                    "shortName": "A"
+                  }
+                },
+                {
+                  "nameCode": {
+                    "codeValue": "NAICS",
+                    "shortName": "NAICS"
+                  },
+                  "classificationCode": {
+                    "codeValue": "1234",
+                    "shortName": "1234"
+                  }
+                }
+              ],
+              "industryClassifications": [
+                {
+                  "nameCode": {
+                    "codeValue": "NAICS",
+                    "shortName": "NAICS"
+                  },
+                  "classificationCode": {
+                    "codeValue": "2222",
+                    "shortName": "2222"
+                  }
+                }
+              ],
+              "wageLawCoverage": {
+                "wageLawNameCode": {
+                  "codeValue": "FLSA",
+                  "longName": "Fair Labor Standards Act"
+                },
+                "coverageCode": {
+                  "codeValue": "E",
+                  "shortName": "Exempt"
+                }
+              },
+              "positionID": "A8A8A8A8",
+              "laborUnion": {
+                "laborUnionCode": {
+                  "codeValue": "NA",
+                  "shortName": "N/A"
+                }
+              },
+              "standardHours": {
+                "hoursQuantity": 40,
+                "unitCode": {
+                  "codeValue": "1",
+                  "shortName": "Weekly"
+                }
+              },
+              "fullTimeEquivalenceRatio": 1.0,
+              "homeOrganizationalUnits": [
+                {
+                  "nameCode": {
+                    "codeValue": "ACM",
+                    "longName": "Acme Company"
+                  },
+                  "typeCode": {
+                    "codeValue": "Business Unit",
+                    "shortName": "Business Unit"
+                  }
+                },
+                {
+                  "nameCode": {
+                    "codeValue": "004",
+                    "longName": "Information Technology"
+                  },
+                  "typeCode": {
+                    "codeValue": "Department",
+                    "shortName": "Department"
+                  }
+                }
+              ],
+              "assignedOrganizationalUnits": [
+                {
+                  "nameCode": {
+                    "codeValue": "ACM",
+                    "longName": "Acme Company Division"
+                  },
+                  "typeCode": {
+                    "codeValue": "Business Unit",
+                    "shortName": "Business Unit"
+                  }
+                },
+                {
+                  "nameCode": {
+                    "codeValue": "123",
+                    "longName": "Information Technology"
+                  },
+                  "typeCode": {
+                    "codeValue": "Department",
+                    "shortName": "Department"
+                  }
+                }
+              ],
+              "homeWorkLocation": {
+                "address": {
+                  "lineOne": "2525 Main Street",
+                  "cityName": "Amarillo",
+                  "countrySubdivisionLevel1": {
+                    "subdivisionType": "StateTerritory",
+                    "codeValue": "TX",
+                    "shortName": "Texas"
+                  },
+                  "countryCode": "US",
+                  "postalCode": "54321"
+                },
+                "nameCode": {
+                  "codeValue": "ABC",
+                  "longName": "Alpha Beta Charlie"
+                }
+              },
+              "workerTimeProfile": {
+                "timeAndAttendanceIndicator": true,
+                "timeZoneCode": "America/Chicago"
+              },
+              "reportsTo": [
+                {
+                  "positionID": "55558888",
+                  "associateOID": "QWERTY12345678",
+                  "workerID": {
+                    "idValue": "45451",
+                    "schemeCode": {
+                      "codeValue": "Associate ID",
+                      "shortName": "Associate ID"
+                    }
+                  },
+                  "reportsToWorkerName": {
+                    "formattedName": "Sparky Anderson"
+                  }
+                }
+              ],
+              "payrollProcessingStatusCode": {
+                "shortName": "Paid"
+              },
+              "payrollGroupCode": "PD1",
+              "payrollScheduleGroupID": "Use Period End Date 1 on checks",
+              "payrollFileNumber": "050505",
+              "payGradeCode": {
+                "codeValue": "AB0099",
+                "shortName": "Grade 99"
+              },
+              "customFieldGroup": {
+                "stringFields": [
+                  {
+                    "itemID": "payrollCustomArea1",
+                    "nameCode": {
+                      "codeValue": "payrollCustomArea1",
+                      "shortName": "payrollCustomArea1"
+                    },
+                    "stringValue": "ANNUAL"
+                  },
+                  {
+                    "itemID": "payrollCustomArea2",
+                    "nameCode": {
+                      "codeValue": "payrollCustomArea2",
+                      "shortName": "payrollCustomArea2"
+                    },
+                    "stringValue": "99.2"
+                  },
+                  {
+                    "itemID": "payrollCustomArea3",
+                    "nameCode": {
+                      "codeValue": "payrollCustomArea3",
+                      "shortName": "payrollCustomArea3"
+                    },
+                    "stringValue": "WORKER"
+                  }
+                ]
+              },
+              "managementPositionIndicator": false,
+              "jobFunctionCode": {
+                "codeValue": "AD000",
+                "shortName": "1234"
+              }
+            }
+          ],
+          "customFieldGroup": {
+            "codeFields": [
+              {
+                "itemID": "1234678_1",
+                "nameCode": {
+                  "codeValue": "Department Classification",
+                  "longName": "Department Classification"
+                }
+              }
+            ],
+            "dateFields": [
+              {
+                "itemID": "AAA:555:121",
+                "nameCode": {
+                  "codeValue": "F/T Hire Effective Date",
+                  "longName": "F/T Hire Effective Date"
+                },
+                "dateValue": "2010-02-22"
+              },
+              {
+                "itemID": "AAA:555:122",
+                "nameCode": {
+                  "codeValue": "Promotion Effective Date",
+                  "longName": "Promotion Effective Date"
+                },
+                "dateValue": "2012-09-11"
+              },
+              {
+                "itemID": "AAA:512:123",
+                "nameCode": {
+                  "codeValue": "Position Effective Date",
+                  "longName": "Position Effective Date"
+                },
+                "dateValue": "2018-03-21"
+              },
+              {
+                "itemID": "AAA:512:124",
+                "nameCode": {
+                  "codeValue": "Orig Term Date",
+                  "shortName": "Orig Term Date"
+                }
+              }
+            ],
+            "stringFields": [
+              {
+                "itemID": "AAA:512:125",
+                "nameCode": {
+                  "codeValue": "Custom Mgr ID",
+                  "shortName": "Custom Mgr ID"
+                },
+                "stringValue": "sanderson"
+              },
+              {
+                "itemID": "AAA:512:125",
+                "nameCode": {
+                  "codeValue": "Custom User ID",
+                  "shortName": "Custom User ID"
+                },
+                "stringValue": "tcobb"
+              }
+            ]
+          }
+        }
+      ],
+      "meta": null,
+      "confirmMessage": null
+    }
+  }
+}
+}
+}

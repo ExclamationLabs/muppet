@@ -1,0 +1,60 @@
+{
+  "Entity": {
+    "UsrIdLst": [
+      {
+        "Usr": {
+          "UsrId": "M555103",
+          "UsrIdInfo": {
+            "LstNme": "Bench",
+            "FrstNme": "Johnny",
+            "PrcsGrpLst": [
+              {
+                "PrcsGrp": {
+                  "PrcsGrpId": 601
+                }
+              }
+            ],
+            "Email": "jbench@test.com",
+            "EntlLstUpDte": "2020-03-06-15.46.03",
+            "EntlLstUpDteBy": "X123001",
+            "DfltPrcsGrp": 601,
+            "OwningPrcsGrp": 601,
+            "EmpId": "01234",
+            "Stat": "A",
+            "AuthLstAcsdDte": "2020-02-25-00.00.00",
+            "PwdIntvl": 90,
+            "PwdLstChgDte": "0000-00-00-00.00.00",
+            "RsmeDte": "0000-00-00-00.00.00",
+            "RvkeDte": "0000-00-00-00.00.00",
+            "AvailDays": {
+              "Mon": true,
+              "Tue": true,
+              "Wed": true,
+              "Thr": true,
+              "Fri": true,
+              "Sat": true,
+              "Sun": true
+            },
+            "StrtTme": "00:00",
+            "EndTme": "00:00",
+            "IMSTmeOut": "00:00",
+            "CICSTmeOut": "00:00",
+            "PwdManaged": false
+          },
+          "ErrCde": "0000",
+          "ErrMsg": "Success"
+        }
+      }
+    ]
+  },
+  "Metadata": {
+    "MsgLst": [
+      {
+        "Text": "Success",
+        "Type": "Informational Message",
+        "Severity": "Info",
+        "Code": "0"
+      }
+    ]
+  }
+}
