@@ -1,0 +1,36 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/paylocity/api/v2/companies/F1234/codes/(.*)",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer eyJ0eXAiOJumb1234LCJhbGciOiJSUzI1NiIsIng1dCI6ImJumb1234JHanVKX1UtY19CcVZZJumb12343QSIsImtpZCI6ImJYU1RadjJHanVKX1UtY19CcVZZWnBzJumb1234XeyJpc3MiOiJodHRw9999"
+      },
+      "accept": {
+        "matches": "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": [
+      {
+        "code": "101",
+        "description": "Muppet Cost Center 1"
+      },
+      {
+        "code": "102",
+        "description": "Muppet Cost Center 2"
+      },
+      {
+        "code": "103",
+        "description": "Muppet Cost Center 3"
+      }
+    ]
+  }
+}
+}
+}

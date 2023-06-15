@@ -1,0 +1,50 @@
+{
+  "Entity": {
+    "RetrieveRoleDetails": {
+      "RoleId": "90ee78f5-3a97-4b44-b625-797dc6c34003",
+      "RoleNme": "Test Role 3 - Security",
+      "RoleTyp": "SECURITY",
+      "PrcsGrpId": 601,
+      "LstUpDte": "2020-02-18-14.45.28",
+      "LstUpDteBy": "A444999"
+    },
+    "EntlList": [
+      {
+        "ApplId": "ENTL00000001",
+        "ApplNme": "IBS Insight",
+        "EntlCat": [
+          {
+            "CatId": "AREA00000001",
+            "CatNme": "Test Category",
+            "EntlActyList": [
+              {
+                "EntlId": "5ac8cc24-00e8-4e87-97e5-9c8f9c61435f",
+                "EntlUnitId": "af1080b:1192b5553a7:-36d7",
+                "EntlTyp": "Activity 1",
+                "EntlDesc": "view information",
+                "ActyId": "ITEM00014101",
+                "ActyGrp": "Test Info",
+                "ActyTyp": "View",
+                "ActyNme": "ViewList",
+                "IntopTrgt": false,
+                "AuthData": [
+                  "ABAB"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Metadata": {
+    "MsgLst": [
+      {
+        "Text": "Success",
+        "Type": "Informational Message",
+        "Severity": "Info",
+        "Code": "0"
+      }
+    ]
+  }
+}

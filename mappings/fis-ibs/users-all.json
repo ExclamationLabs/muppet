@@ -1,0 +1,89 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/fis-ibs/rest/MUPPET/v3/users/search-details",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer eyJ0eXAiOJumb1234LCJhbGciOiJSUzI1NiIsIng1dCI6ImJumb1234JHanVKX1UtY19CcVZZJumb12343QSIsImtpZCI6ImJYU1RadjJHanVKX1UtY19CcVZZWnBzJumb1234XeyJpc3MiOiJodFIS123789"
+      },
+      "Content-Type": {
+        "equalTo": "application/json"
+      }
+    },
+    "bodyPatterns": [
+      {
+        "equalToJson": "{\"UnAssgndUsrIds\" : false, \"EmbedPrcsGrp\": \"601\",\"PrcsGrpLst\": [{ \"PrcsGrpId\": \"601\" }]}"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "Entity": {
+        "UsrIdLst": [
+          {
+            "Usr": {
+              "UsrId": "M555101",
+              "LstNme": "Cobb",
+              "FrstNme": "Ty",
+              "PrcsGrpLst": {
+                "PrcsGrpId": 601
+              },
+              "DfltPrcsGrp": 601,
+              "PwdManaged": false
+            }
+          },
+          {
+            "Usr": {
+              "UsrId": "M555102",
+              "LstNme": "Mattingly",
+              "FrstNme": "Don",
+              "PrcsGrpLst": {
+                "PrcsGrpId": 601
+              },
+              "DfltPrcsGrp": 601,
+              "PwdManaged": false
+            }
+          },
+          {
+            "Usr": {
+              "UsrId": "M555103",
+              "LstNme": "Bench",
+              "FrstNme": "Johnny",
+              "PrcsGrpLst": {
+                "PrcsGrpId": 601
+              },
+              "DfltPrcsGrp": 601,
+              "PwdManaged": false
+            }
+          },
+          {
+            "Usr": {
+              "UsrId": "M555104",
+              "LstNme": "Rose",
+              "FrstNme": "Pete",
+              "PrcsGrpLst": {
+                "PrcsGrpId": 601
+              },
+              "DfltPrcsGrp": 601,
+              "PwdManaged": false
+            }
+          }
+        ]
+      },
+      "Metadata": {
+        "MsgLst": [
+          {
+            "Text": "Success",
+            "Type": "Informational Message",
+            "Severity": "Info",
+            "Code": "0"
+          }
+        ]
+      }
+    }
+  }
+}
